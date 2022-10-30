@@ -1,0 +1,10 @@
+<div class="archive-box">
+  <%- partial('_partial/tag-cloud') %>
+  <div class="archive">
+    <%- list_archives({
+    }) %> 
+  </div>
+</div>
+<% if(is_archive()) { %>
+  <%- partial('_partial/post-list') %>
+<% } %>

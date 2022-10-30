@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+  <head>
+    <%- partial('_partial/head') %>
+  </head>
+  <body>
+    <%- partial('_partial/header') %>
+    <%- body %>
+    <%- js('lib/highlight/highlight.min.js') %>
+    <%- js('js/main.js') %>
+    <%- js('js/click-love.js') %>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html

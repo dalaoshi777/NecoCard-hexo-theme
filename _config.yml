@@ -1,0 +1,35 @@
+#主题设置
+#-----------------------------基础设置------------------------------------------
+avatar: /img/3.png  #头像
+description: 知晓天空之蓝的人啊 #介绍
+name: 小三玖のblog #名字
+#-----------------------------导航栏设置------------------------------------------
+#用法: 延续下列格式(添加新页面需要手动创建新页面)
+menus: 
+  首页: /
+  归档: /archives
+  朋友: /friend
+  关于: /about
+#-----------------------------友链自定义------------------------------------------
+friend:
+  -
+    name: company1
+    link: https://www.google.com.hk/
+    img: /img/1.jpg
+  -
+    name: company2
+    link: https://www.google.com.hk/
+    img: /img/2.jpg
+  -
+    name: company2
+    link: https://www.google.com.hk/
+    img: /img/2.jpg
+  -
+    name: company1
+    link: https://www.google.com.hk/
+    img: /img/1.jpg
+#-----------------------------主题样式自定义------------------------------------------
+card-border-radius: 6px
+
+
+ 

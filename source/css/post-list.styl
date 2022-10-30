@@ -1,0 +1,133 @@
+/*页面文章列表样式 */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.post-list-box {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    min-height: 80px;
+    width: 75%;
+    border-radius: convert(hexo-config('card-border-radius'));
+    margin: 10px;
+    background-color: white;
+    transition: transform 0.5s;
+    
+}
+.post-list-img-box {
+    width :180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.post-list-img {
+    overflow: hidden;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.post-list {
+    display: flex;
+    flex-direction: column
+    width: 100%;
+}
+
+
+.post-list-box:hover {
+    transform: translateY(-3px);
+    transition: transform 0.5s;
+}
+.post-list-flex-box {
+    display: flex;
+    justify-content: center;
+}
+.post-title {
+    font-weight:bold;
+    margin: 10px 10px 0px 10px;
+}
+.post-list-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.post-date {
+    display: flex;
+    align-items: center;
+}
+.post-date span {
+    margin-left: 5px
+}
+.read-more-button a {
+    text-decoration: none;
+    font-weight:700;
+    color: black;
+    font-size: 18px;
+    margin-left: 12px;
+    padding: 6px 12px;
+    transition: .2s;
+    border-radius: 6px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.read-more-button :hover {
+    background-color: #F5F7FA;
+}
+.article-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px 10px 10px;
+}
+.article-tag-list-item {
+    list-style: none;
+}
+.article-tag-list a {
+    text-decoration: none;
+    font-weight:700;
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px;
+    padding: 5px 10px
+    transition: .2s;
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    background-color: #F5F7FA;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.article-tag-list a:hover {
+    color: #335eea;  
+    transition: .2s;
+}
+.page-excerpt {
+  height: 100%;
+  margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+  .post-list-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width :90%;
+  }
+  .post-list-img-box {
+    margin: 0 10px 0px 10px;
+    width: 100%;
+  }
+  .post-list-img {
+    max-width: 100%;
+  }
+}
+
+
+
+

@@ -1,0 +1,11 @@
+<div class="friend-box">
+  <div class="friends">
+    <% theme.friend.forEach(function(friends){ %>
+      <div class="friends-item">
+        <img src="<%- url_for(friends.img) %>" alt="">
+        <a href="<%- url_for(friends.link) %>"><%- friends.name %></a>
+      </div>
+    <% }); %>
+  </div>
+
+</div>

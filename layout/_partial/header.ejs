@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="header-box">
+    <img class="avatar" src="<%- theme.avatar %>" alt="">
+    <p class="name"><%- theme.name %></p>
+    <p><%- theme.description %></p>
+    <ul id="menu">
+      <!-- 内部链接本页面直接跳转 -->
+      <% for ( menu in theme.menus ) { %>
+        <li class="menu-item">
+          <a href="<%- url_for(theme.menus[menu]) %>" class="menu-item-link"><%- menu %></a>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+
