@@ -1,6 +1,6 @@
 #主题设置
 #-----------------------------基础设置------------------------------------------
-avatar: /img/3.png  #头像
+avatar: /image/avatar.png  #头像
 description: 知晓天空之蓝的人啊 #介绍
 name: 小三玖のblog #名字
 #-----------------------------导航栏设置------------------------------------------
@@ -13,19 +13,15 @@ menus:
 #-----------------------------友链自定义------------------------------------------
 friend:
   -
-    name: company1
-    link: https://www.google.com.hk/
-    img: /img/1.jpg
+    name: MixJiaのblog
+    link: https://blog.mixjia233.com/
+    img: http://q1.qlogo.cn/g?b=qq&nk=2096002533&s=100
   -
-    name: company2
-    link: https://www.google.com.hk/
-    img: /img/2.jpg
-  -
-    name: company2
+    name: company3
     link: https://www.google.com.hk/
     img: /img/2.jpg
   -
-    name: company1
+    name: company4
     link: https://www.google.com.hk/
     img: /img/1.jpg
 #-----------------------------主题样式自定义------------------------------------------
