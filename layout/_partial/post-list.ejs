@@ -3,7 +3,7 @@
     <div class="post-list-box">
       <% if(post.img !=undefined) { %>
         <div class="post-list-img-box">
-          <img class="post-list-img" src="<%- url_for(post.img) %>" alt="">
+          <img class="post-list-img lazyload" data-src="<%- url_for(post.img) %>">
         </div>
       <% } %>
       <div class="post-list">

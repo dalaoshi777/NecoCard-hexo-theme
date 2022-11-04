@@ -25,7 +25,7 @@ friend:
     link: https://www.google.com.hk/
     img: /img/1.jpg
 #-----------------------------主题样式自定义------------------------------------------
-card-border-radius: 6px
+theme-border-radius: '6px'
 
 
  
