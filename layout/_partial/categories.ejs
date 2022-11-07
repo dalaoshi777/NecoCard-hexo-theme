@@ -1,0 +1,12 @@
+<div class="category-box">
+  <div class="category">
+    <div class="category-header">
+      <p>分类</p>
+    </div>
+    <div class="category-item">
+      <% site.categories.forEach(function(category){ %>
+        <a  class="category-item-link" href="/<%- category.path %>"><%- category.name %></a>
+      <% }); %>
+    </div>
+  </div>
+</div>

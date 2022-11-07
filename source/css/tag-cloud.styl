@@ -1,11 +1,7 @@
-.tag-cloud-flex {
-    display: flex;
-    justify-content: center;
-}
 
 .tag-cloud-box {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: convert(hexo-config('card-border-radius'));
+    border-radius: $theme-border-radius;
     margin: 10px;
     width: 75%;
     display: flex;
@@ -15,7 +11,6 @@
 .tag-cloud-header  {
     display: flex;
     align-items: center;
-    margin: 10px;
 }
 .tag-cloud-header span {
     font-size: 16px;
@@ -23,26 +18,29 @@
     margin-left: 5px
 
 }
-.tag-cloud {
+.tag-cloud-item {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
 }
-.tags-box a {
+.tag-cloud {
+    padding: 10px;
+}
+.tag-cloud-item-link {
     text-decoration: none;
-    font-weight:700;
+    min-width: 40px;
+    font-weight: bold;
+    text-align: center
     color: black;
-    font-size: 18px;
-    margin: 0px 10px 10px 10px;
-    padding: 5px 10px
+    font-size: 8px;
+    padding: 8px;
+    margin: 5px 10px
     transition: .2s;
     border-radius: 6px;
     display: block;
-    text-align: center;
     background-color: #F5F7FA;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
-.tags-box a:hover {
+.tag-cloud-item-link:hover {
     color: #335eea;   
 }
 @media screen and (max-width: 450px) {
