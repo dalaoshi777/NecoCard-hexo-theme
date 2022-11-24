@@ -35,4 +35,28 @@ images.forEach( image => {
    observer.observe( image );
 });
 */
-//----------------------------------------------------------------
+//--------------------------返回顶部功能--------------------------------------
+const scrollToTopBtn = document.querySelector('.back-to-top')
+const rootElement = document.documentElement
+
+function handleScroll() {
+   const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+   if ((rootElement.scrollTop / scrollTotal) > 0.80) {
+     scrollToTopBtn.classList.add('showBtn')
+   } else {
+     scrollToTopBtn.classList.remove('showBtn')
+   }
+ }
+ 
+ document.addEventListener('scroll', handleScroll)
+ 
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
+scrollToTopBtn.addEventListener('click', scrollToTop)
+//-----------------------------------------------------------------------

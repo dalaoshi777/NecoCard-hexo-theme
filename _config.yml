@@ -24,8 +24,17 @@ friend:
     name: company4
     link: https://www.google.com.hk/
     img: /img/1.jpg
+  -
+    name: company4
+    link: https://www.google.com.hk/
+    img: /img/1.jpg
+  -
+    name: company4
+    link: https://www.google.com.hk/
+    img: /img/1.jpg
 #-----------------------------主题样式自定义------------------------------------------
 theme-border-radius: '6px'
 
-
+#------------------------------页脚设置-----------------------------------------------
+copyright: © 2022 dalaoshi777
  
