@@ -10,11 +10,10 @@
     align-items: center;
 }
 .friends-item img {
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 100px;
+    height: 100px;
     border-radius: 6px;
-    object-fit: contain;
+    object-fit: cover;
     transition: 1s;
     transform-style: preserve-3d;
     
@@ -26,18 +25,20 @@
 }
 .friends-item {
     width: 150px;
-    height: 50px;
+    height: 150px;
+    background-color: #f9f9f9;
     display: flex
-    padding: 10px;
+    padding: 32px;
     margin: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 6px;
+    align-items: center;
+    flex-direction: column;
 }
 .friends-item a {
     text-align: center;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
-    margin: 0px 10px;
+    margin: 20px 0px;
     color: black;
     text-decoration: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
