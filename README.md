@@ -1,6 +1,7 @@
 # NecoCard-hexo-theme
 
 一个简单的hexo主题
+智能懒加载lazysizes.js(仅文章列表有效)
 
 [主题浏览](https://dalaoshi777.github.io)
 
