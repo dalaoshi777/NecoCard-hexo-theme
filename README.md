@@ -4,6 +4,7 @@
 智能懒加载lazysizes.js(仅文章列表有效)
 
 [主题浏览](https://dalaoshi777.github.io)
+本项目已经荒废，有些bug也没修。
 
 ## 如何使用？
 
