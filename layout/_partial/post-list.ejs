@@ -6,7 +6,10 @@
           <img class="post-list-img lazyload" data-src="<%- url_for(post.img) %>">
         </div>
       <% } %>
-      <div class="post-list">
+      <div class="post-list" onclick="window.location.href ='<%- url_for(post.path) %>'">
+        <div class="post-date">
+          <span><%- post.date.format(config.date_format) %></span>
+        </div>
         <div class="post-title">
           <%- post.title %>
         </div>
@@ -14,13 +17,9 @@
           <%- post.excerpt %>
         </div>
         <div class="post-list-footer">
-          <div class="post-date">
-            <?xml version="1.0" encoding="UTF-8"?><svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="40" height="40" rx="2" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 14H44" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><line x1="44" y1="11" x2="44" y2="23" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22H16" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 22H26" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 22H36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 29H16" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 29H26" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 29H36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 36H16" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 36H26" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 36H36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><line x1="4" y1="11" x2="4" y2="23" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span><%- post.date.format(config.date_format) %></span>
-          </div>
-          <div class="read-more-button">
+<!--           <div class="read-more-button">
             <a href="<%- url_for(post.path) %>">阅读全文</a>
-          </div>
+          </div> -->
         </div>
         <%- list_tags(post.tags, {
           show_count: false,
